@@ -1,0 +1,2 @@
+from payment.models.choices.currency_code import CURRENCY_CODE_CHOICES
+from payment.models.choices.payment_action_type import ACTION_TYPE_CHOICES

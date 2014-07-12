@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<form action="{% url 'payment_update' object.id %}" method="post" accept-charset="utf-8">
+	{% csrf_token %}
+	{{ form.as_p }}
+<p><input type="submit" value="Update"></p>
+</form>
+
+{% endblock %}
+
