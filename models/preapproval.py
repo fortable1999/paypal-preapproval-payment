@@ -30,7 +30,7 @@ class Preapproval(models.Model):
         
     # preapprovalKey as primary key
     preapproval_id = models.CharField(
-        _("pre-approval key")
+        _("pre-approval key"),
         max_length=40,
         primary_key=True,
     )

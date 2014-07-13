@@ -32,7 +32,7 @@ class PreapprovalPayment(models.Model):
     """
     payment model for Paypal payment
     """
-    objects = PaymentManager()
+    objects = PreapprovalPaymentManager()
 
     # Primary key use UUID
     # 
@@ -70,7 +70,7 @@ class PreapprovalPayment(models.Model):
 
     # Application fields
     to_project = models.ManyToManyField(
-        'project.Project'
+        'project.Project',
         _("project"),
         related_name = "payments",
     )

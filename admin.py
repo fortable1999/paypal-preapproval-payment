@@ -5,16 +5,16 @@ template author: Meng Zhao fortable1999@gmail.com
 """
 
 from django.contrib import admin
-from payment.models import Payment
+# from payment.models import Payment
 
 
-class PaymentAdmin(admin.ModelAdmin):
-	"""docstring for PaymentAdmin"""
-	list_display = (
-		'text', 
-		'created_datetime',
-		'updated_datetime',
-	)
-		
-
-admin.site.register(Payment, PaymentAdmin)
+# class PaymentAdmin(admin.ModelAdmin):
+# 	"""docstring for PaymentAdmin"""
+# 	list_display = (
+# 		'text', 
+# 		'created_datetime',
+# 		'updated_datetime',
+# 	)
+# 		
+# 
+# admin.site.register(Payment, PaymentAdmin)

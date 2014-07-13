@@ -1,2 +1,3 @@
-from payment.models.payment import Payment
-from payment.models.preapproval import Preapproval
+from payment.models.payment import *
+from payment.models.preapproval import *
+from payment.models.paypal_mixin import *
